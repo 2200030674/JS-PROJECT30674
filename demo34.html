@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>demo34</title>
+        <script>
+            //javascript class and object
+            //class contain properties /attributes & methods/mebers function
+            class person
+            {
+                setdata(id,name,status)
+                {
+                    // pid,pname,pstatus are properties in person class
+                    this.pid=id
+                    this.pname=name
+                    this.pstatus=status
+                }
+
+                getdata()
+                {
+                    document.writeln("person ID="+this.pid+"</br>")
+                    document.writeln("person Name="+this.pname+"</br>")
+                    document.writeln("person Status="+this.pstatus+"</br>")
+                    
+                }
+            }
+
+            let p1 = new person() // p1 is an person object
+            p1.setdata(1,"klu",true)
+            p1.getdata()
+
+            let p2 = new person() // p2 is an person object
+            p2.setdata(2,"mswd",false)
+            p2.getdata()
+
+            document.writeln(p1.pid+","+p1.pname+","+p1.status)
+            document.writeln("</br>")
+            document.writeln(p2.pid+","+p2.pname+","+p2.status)
+            
+        </script>
+       
+    </head>
+    <body>
+        
+    </body>
+</html>
